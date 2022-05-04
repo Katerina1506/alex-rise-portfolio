@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.video {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+        &__img {
+            width: 100%;
+        }
+}
+.player__btn {
+    z-index: 1;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-color: transparent;
+    background-image: url(./assets/video/Play_hover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s;
+        &:hover {
+            filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+            contrast(87%);
+        }
+}
+@media (max-width: 860px) {
+    .player__btn{
+        width: 15%;
+        height: 15%;
+        background-image: none;
+    }
+
+}

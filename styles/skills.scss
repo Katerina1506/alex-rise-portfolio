@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+.all__skills {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.skills {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 36px;
+    margin: auto;
+        &__img {
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__title {
+            color: $white;     
+            font-weight: 700;
+            font-size: 20px;
+            text-align: center;
+            padding: 50px 0px 20px 0px;
+
+        }
+        &__text {
+            color: $white;
+            padding-right: 20px;
+        }
+}
+
+@media (max-width: 960px) {
+    .all__skills {
+        flex-wrap: wrap;
+    }
+    .skills{
+        min-width: 321px;
+    }
+}
+
+@media (max-width: 480px){
+    .skills {
+        min-width: 301px;
+        padding: 0 5px 36px 5px;
+    }
+    .skills__title {
+        font-size: 18px;
+    }
+    .skills__text {
+        font-size: 16px;
+        padding-right: 1px;
+    }
+}
+// @media (max-width: 770px)

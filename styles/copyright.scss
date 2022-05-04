@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+.info {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+        .copyright {
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 20px 20px 20px;
+            font-size: 20px;
+            font-weight: 400;
+                & a {
+                    text-decoration: none;
+                    color: $white;
+                }
+        }
+        .messanger {
+            padding: 40px 40px 20px 20px;
+            font-size: 25px;
+            font-weight: 400;
+                & i {
+                    padding: 0px 10px;
+                }
+        }
+}
+@media (max-width: 770px) {
+    .info{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        .copyright {
+            width: 25%;
+            padding: 20px 20px 5px 20px;
+        }
+        .messanger {
+            padding: 20px 40px 20px 20px;
+        }
+    }
+}

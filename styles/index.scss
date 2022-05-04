@@ -1,0 +1,29 @@
+@import "./header.scss";
+@import "./hero.scss";
+@import "./variables.scss";
+@import "./section.scss";
+@import "./skills.scss";
+@import "./portfolio.scss";
+@import "./video.scss";
+@import "./price.scss";
+@import "./contact.scss";
+@import "./copyright.scss";
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: $bg-dark;
+    margin: 0;  
+    line-height: 1.6;
+    color: #333;
+    overflow-x:hidden;
+}
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 1210px;
+    margin: 0 auto;
+    // padding: 0 20px;
+}

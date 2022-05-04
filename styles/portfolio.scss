@@ -1,0 +1,111 @@
+@import "./variables.scss";
+
+.seasons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+        &__item {
+            background-color: $bg-dark;
+            color: $gold;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s cubic-bezier(0.5, 0.3, 0, 0.93) 0s;
+
+            font-size: 20px;
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid $gold;
+            width: 16%;
+            & a {
+                text-decoration: none;
+            }
+            &._active {
+                background-color: $gold;
+                color: #000;
+            }
+        }
+}
+.winter__photo,
+.spring__photo,
+.summer__photo,
+.autumn__photo {
+    width: 100%;
+
+}
+
+        .photo__item {
+            display: none;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: auto;
+            align-content: center;
+            justify-content: center;
+            transition: .5s cubic-bezier(0.5, 0.3, 0, 0.93) 0s;
+                &.visible {
+                    display: flex;
+                }
+                & img {
+                    width: 30%;
+                    padding: 25px 12px 0px 13px;
+                }
+        }
+
+
+
+@media (max-width: 1024px) {
+    .photo__item img {
+        min-width: 430px;
+    }
+}
+@media (max-width: 960px) {
+    .photo__item img {
+        min-width: 374px;
+    }
+    .seasons {
+        width: 65%;
+        .seasons__item {
+            width: 43%;
+            padding: 12px;
+        }
+    }
+}
+@media (max-width: 860px) {
+    .photo__item img {
+        min-width: 570px;
+    }
+}
+@media (max-width: 780px) {
+    .seasons {
+        width: 75%;
+        .seasons__item {
+            width: 40%;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .photo__item img {
+        min-width: 400px;
+    }
+}
+@media (max-width: 480px) {
+    .seasons {
+        width: 90%;
+        .seasons__item {
+        width: 80%;
+        }
+    }
+}
+@media (max-width: 425px) {
+    .photo__item img {
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 320px) {
+    .photo__item img {
+        min-width: 280px;
+    }
+}

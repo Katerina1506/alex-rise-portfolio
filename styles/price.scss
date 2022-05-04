@@ -1,0 +1,59 @@
+@import "./variables.scss";
+.tariff{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding-bottom: 100px;
+    align-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    &__item {
+        width: 31%;
+        text-align: center;
+        border: 3px solid $gold;
+        padding: 40px 0px;
+        margin: auto;
+            .tariff__name {
+                color: $white;
+                font-weight: 700;
+                font-size: 28px;
+            }
+            .tariff__price {
+                color: $gold;
+                font-weight: 700;
+                font-size: 24px;
+                padding: 20px 0px;
+            }
+            .tariff_description p {
+                color: $white;
+                font-weight: 400;
+                font-size: 18px;  
+            }
+            .tariff_btn {
+                color: #000;
+                background-color: $gold;
+                font-size: 20px;
+                padding: 8px 39px 7px 39px;
+                margin-top: 40px;
+                border: none;
+                cursor: pointer;
+                transition: 0.3s;
+                    &:hover {
+                        color: $white;
+                    }
+            }
+    }
+}
+@media (max-width: 860px) {
+    .tariff {
+        &__item {
+            min-width: 420px;
+            margin-bottom: 50px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .tariff__item {
+        min-width: 300px;
+    }
+}

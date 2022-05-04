@@ -1,0 +1,95 @@
+@import "./variables.scss";
+.section__hero {
+    background-image: url(./assets/svg/bg.svg);
+    background-position: center -92px;
+    background-repeat: no-repeat;
+    padding-bottom: 330px;
+}
+
+.section{
+    background-color: $bg-dark;
+        &__title {
+            font-weight: 700;
+            font-size: 40px;
+            color: $gold;
+            text-align: center;
+            position: relative;
+            padding: 100px 0px 60px 0px;
+                &::after {
+                    background-color: $gold;
+                    width: 20%;
+                    height: 2px;
+                    content: "";
+                    position: absolute;
+                    margin-top: 33px;
+                    margin-left: 20px;
+                }
+                &::before {
+                    background-color: $gold;
+                    width: 20%;
+                    height: 2px;
+                    content: "";
+                    position: absolute;
+                    margin-top: 33px;
+                    margin-left: -22%;
+                }
+        }
+}
+
+
+.section__contact {
+    background-image: url(./assets/img/contacts.jpeg);
+    background-position: center 0px;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 860px) {
+    .section__hero {
+        background-position: center -92px;
+        background-size: auto 620px;
+        background-position-x: 0px;
+        padding-bottom: 200px;
+    }
+    .section__title {
+        padding: 20px 0px 60px 0px;
+    }
+}
+
+@media (max-width: 770px) {
+    .section__hero {
+        padding-bottom: 180px;
+        background-position-x: 0px;
+        &._active {
+            opacity: 0.5;
+        }
+    }
+    .section__title {
+        padding: 50px 0px 60px 0px;
+    }
+}
+@media (max-width: 650px) {
+    .section__hero {
+        background-position-x: -104px;
+    }
+}
+@media (max-width: 480px) {
+    .section__hero {
+        background-position-x: -170px;
+    }
+}
+@media (max-width: 390px) {
+    .section__hero {
+        background-position-x: -254px;
+    }
+    .section__title {
+        font-size: 30px;
+        &::after {
+            margin-top: 23px;
+            margin-left: 12px;
+        }
+        &::before {
+            margin-top: 23px;
+            margin-left: -22%;
+        }
+    }
+}
